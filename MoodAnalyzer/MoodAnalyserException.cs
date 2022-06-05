@@ -11,7 +11,7 @@ namespace MoodAnalyzer
         //creating enum to store different types of errors
         public enum ExceptionType
         {
-            NULL_MESSAGE,EMPTY_MESSAGE
+            NULL_MESSAGE,EMPTY_MESSAGE,NO_AVAILABLE_CLASS,NO_AVAILABLE_METHOD
         }
 
         //declaring a readonly variable

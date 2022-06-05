@@ -11,9 +11,20 @@ namespace MoodAnalyzer
             Console.WriteLine("\t\t\t\t    ----------------------------------------");
             Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.Blue;
-            string message = null;
-            MoodAnalyserLogic moodAnalyser = new MoodAnalyserLogic(message);
-            System.Console.WriteLine("I am in a {0} mood. ",moodAnalyser.AnalyseMood());
+            //try-catch block code to run and catch any exceptions
+            try
+            {
+                string message = String.Empty;
+                MoodAnalyserLogic moodAnalyser = new MoodAnalyserLogic(message);
+                string result = moodAnalyser.AnalyseMood();
+                Console.WriteLine(result);
+            }
+            catch (MoodAnalyserException m)
+            {
+
+                Console.WriteLine(m.Message); ;
+            }
+            
             Console.ReadKey();
         }
     }
