@@ -11,6 +11,7 @@ namespace MoodAnalyzer.Tests
     [TestClass]
     public class MoodAnalyserLogicTests
     {
+        //Test 1
         [TestMethod]
         public void TestAnalyseMood_ShouldReturnSAD()
         {
@@ -25,6 +26,7 @@ namespace MoodAnalyzer.Tests
             Assert.AreEqual(result, "SAD");
         }
 
+        //Test 2
         [TestMethod]
         public void TestAnalyseMood_ShouldReturnHAPPY()
         {
