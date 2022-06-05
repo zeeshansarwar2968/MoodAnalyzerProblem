@@ -27,7 +27,7 @@ namespace MoodAnalyzer
             if (this.message.Contains("sad", StringComparison.OrdinalIgnoreCase))  //this performs a case-insensitive ordinal string comparison
                 return "SAD";
             else
-                return "HAPPY";
+                return "HAPPY";  //default return value 
         }
     }
 }
