@@ -23,11 +23,21 @@ namespace MoodAnalyzer
         
         public string AnalyseMood()
         {
-            //This method is used to check whether the substring occurs within a given string or not
-            if (this.message.Contains("sad", StringComparison.OrdinalIgnoreCase))  //this performs a case-insensitive ordinal string comparison
-                return "SAD";
-            else
-                return "HAPPY";  //default return value 
+            try
+            {
+                //This method is used to check whether the substring occurs within a given string or not
+                if (this.message.Contains("sad", StringComparison.OrdinalIgnoreCase))  //this performs a case-insensitive ordinal string comparison
+                    return "SAD";
+                else
+                    return "HAPPY";  //default return value 
+
+            }
+            catch(NullReferenceException)
+            {
+
+                return "HAPPY?!!";
+            }
+            
         }
     }
 }
