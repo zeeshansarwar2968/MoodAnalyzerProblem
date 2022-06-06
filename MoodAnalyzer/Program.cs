@@ -14,7 +14,7 @@ namespace MoodAnalyzer
             //try-catch block code to run and catch any exceptions
             try
             {
-                string message = String.Empty;
+                string message = string.Empty;
                 MoodAnalyserLogic moodAnalyser = new MoodAnalyserLogic(message);
                 string result = moodAnalyser.AnalyseMood();
                 Console.WriteLine(result);

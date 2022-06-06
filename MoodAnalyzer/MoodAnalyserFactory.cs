@@ -10,6 +10,7 @@ namespace MoodAnalyzer
 {
     public class MoodAnalyserFactory
     {
+        //static method --> return type id an object
         public static object CreateMoodAnalyserObject(string className, string constructorName)
         {
             //Expression to validate the constructor name
@@ -39,5 +40,8 @@ namespace MoodAnalyzer
                 throw new MoodAnalyserException(MoodAnalyserException.ExceptionType.NO_AVAILABLE_METHOD, "constructor not found");
             }
         }
+
+
+        
     }
 }
